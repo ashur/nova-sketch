@@ -10,9 +10,7 @@ Run [Sketch plugin][plugins] commands from [Nova].
 
 ## Usage
 
-Let's say we're using Nova to develop a Sketch plugin for importing and exporting palettes.
-
-Our plugin has a couple of commands, **Import Palette...** and **Export Palette...**
+Let's say we're using Nova to develop a Sketch plugin that has a couple of commands, **Import Palette...** and **Export Palette...**
 
 Testing changes to either command's handler might look like this:
 
