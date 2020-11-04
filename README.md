@@ -21,30 +21,7 @@ Testing changes to either command's handler might look like this:
 
 Not bad, but we can still remove a _little_ bit of friction in our development workflow.
 
-Using the [dynamic task assistant] feature added in Nova 2, this extension detects Sketch plugin commands defined in `Contents/Sketch/manifest.json`:
-
-```json
-"commands": [
-    {
-        "name": "Import Palette...",
-        "script": "script.js",
-        "handlers": {
-            "run": "importPalette"
-        },
-        "identifier": "cab.ashur.Sketch.importPalette"
-    },
-    {
-        "name": "Export Palette...",
-        "script": "script.js",
-        "handlers": {
-            "run": "exportPalette"
-        },
-        "identifier": "cab.ashur.Sketch.exportPalette"
-    }
-],
-```
-
-and automatically turns them into Tasks:
+Using the [dynamic task assistant] feature added in Nova 2, this extension detects Sketch plugin commands defined in `Contents/Sketch/manifest.json` and automatically turns them into Tasks:
 
 ![](/assets/tasks.png)
 
