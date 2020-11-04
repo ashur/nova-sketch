@@ -1,0 +1,15 @@
+{
+  "name": "nova-npm-scripts",
+  "version": "1.0.0",
+  "description": "An example extension demonstrating Nova's dynamic task functionality",
+  "scripts": {
+    "lint": "eslint *.novaextension/scripts/*.js"
+  },
+  "keywords": [],
+  "author": "Panic Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-nova": "^1.2.0"
+  }
+}

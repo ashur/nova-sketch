@@ -1,0 +1,30 @@
+{
+	"identifier": "cab.ashur.RunInSketch",
+	"name": "Run in Sketch",
+	"organization": "Ashur Cabrera",
+	"description": "Run Sketch plugin commands from Nova",
+	"version": "1.0",
+	"min_runtime": "2",
+
+	"categories": ["tasks"],
+
+	"main": "main.js",
+
+	"activationEvents": [
+		"onWorkspaceContains:Contents/Sketch/manifest.json"
+	],
+
+	"entitlements": {
+		"filesystem": "readonly",
+		"process": true
+	},
+
+	"config": [
+		{
+			"key": "cab.ashur.RunInSketch.bundlePath",
+			"title": "Path to Sketch",
+			"type": "path",
+			"default": "/Applications/Sketch.app"
+		}
+	]
+}
