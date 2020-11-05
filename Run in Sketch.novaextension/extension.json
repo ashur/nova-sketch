@@ -3,7 +3,7 @@
 	"name": "Run in Sketch",
 	"organization": "Ashur Cabrera",
 	"description": "Run Sketch plugin commands from Nova",
-	"version": "1.0",
+	"version": "1.0.1",
 	"min_runtime": "2",
 	"main": "main.js",
 
