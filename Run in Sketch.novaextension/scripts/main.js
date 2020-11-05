@@ -9,11 +9,8 @@ class TaskProvider
 
 		nova.fs.watch( "Contents/Sketch/manifest.json", () =>
 		{
-			if( nova.fs.stat( this.manifestPath ) )
-			{
-				this.readManifest();
-				nova.workspace.reloadTasks( "cab.ashur.RunInSketch" );
-			}
+			this.readManifest();
+			nova.workspace.reloadTasks( "cab.ashur.RunInSketch" );
 		});
 
 		this.bundlePath = nova.config.get( "cab.ashur.RunInSketch.bundlePath" );
