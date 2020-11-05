@@ -1,12 +1,11 @@
 {
-  "name": "nova-npm-scripts",
+  "name": "nova-sketch",
   "version": "1.0.0",
-  "description": "An example extension demonstrating Nova's dynamic task functionality",
+  "description": "Run Sketch plugin commands from Nova",
   "scripts": {
     "lint": "eslint *.novaextension/scripts/*.js"
   },
   "keywords": [],
-  "author": "Panic Inc.",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.8.0",
