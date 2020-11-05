@@ -27,6 +27,14 @@ Not too bad, but we can remove a little bit of friction in our development workf
 
 ## Setup
 
+### Install in Nova
+
+Now available in the Nova [extensions library]!
+
+[extensions library]: https://panic.com/open-in-nova/extension?id=ashur.RunInSketch
+
+### Clone This Repository
+
 1. [Download][download] and unzip this extension
 1. Double-click `Run in Sketch.novaextension`
 1. Click **Install**
