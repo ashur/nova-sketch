@@ -34,6 +34,13 @@ class TaskProvider
 
 			this.manifest = JSON.parse( manifestJSON );
 		}
+		else
+		{
+			// If manifest.json existed at one point and is later removed, we
+			// should update the internal manifest definition so any tasks
+			// that were previously defined are cleared out.
+			this.manifest = {};
+		}
 	}
 
 	/**
