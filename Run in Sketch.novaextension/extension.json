@@ -1,5 +1,5 @@
 {
-	"identifier": "cab.ashur.RunInSketch",
+	"identifier": "ashur.RunInSketch",
 	"name": "Run in Sketch",
 	"organization": "Ashur Cabrera",
 	"description": "Run Sketch plugin commands from Nova",
