@@ -5,10 +5,11 @@
 	"description": "Run Sketch plugin commands from Nova",
 	"version": "1.0",
 	"min_runtime": "2",
+	"main": "main.js",
 
 	"categories": ["tasks"],
-
-	"main": "main.js",
+	"bugs": "https://github.com/ashur/nova-sketch/issues",
+	"repository": "https://github.com/ashur/nova-sketch",
 
 	"activationEvents": [
 		"onWorkspaceContains:Contents/Sketch/manifest.json"

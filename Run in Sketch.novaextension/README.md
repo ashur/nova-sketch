@@ -1,49 +1,24 @@
-## Usage
-
-Let's say we're using Nova to develop a Sketch plugin for importing and exporting palettes. Our plugin has a couple of commands, **Import Palette...** and **Export Palette...**
-
-Testing changes to either command's handler might look like this:
-
-1. Make changes in Nova
-1. Switch back to Sketch
-1. Open **Plugins → Palettes**
-1. Select the command to run it
-
-Not bad, but we can still remove a _little_ bit of friction in our development workflow.
-
-Using the [dynamic task assistant] feature added in Nova 2, this extension detects Sketch plugin commands defined in `Contents/Sketch/manifest.json`:
-
-```json
-"commands": [
-	{
-		"name": "Import Palette...",
-		"script": "script.js",
-		"handlers": {
-			"run": "importPalette"
-		},
-		"identifier": "cab.ashur.Sketch.importPalette"
-	},
-	{
-		"name": "Export Palette...",
-		"script": "script.js",
-		"handlers": {
-			"run": "exportPalette"
-		},
-		"identifier": "cab.ashur.Sketch.exportPalette"
-	}
-],
-```
-
-and automatically turns them into Tasks:
+Do you develop [Sketch] plugins in Nova? **Run in Sketch** makes any [plugin command] defined in `Contents/Sketch/manifest.json` available as a Nova task automatically 💎✨
 
 ![](https://gitlab.com/ashur/nova-sketch/-/raw/main/assets/tasks.png)
 
-Now we can run our Sketch plugin commands with a single click, keyboard shortcut, or command palette invocation ✨💎
+[Sketch]: https://sketch.com
+[plugin command]: https://developer.sketch.com/plugins/plugin-manifest#commands
 
-[dynamic task assistant]: https://docs.nova.app/api-reference/assistants-registry/#registertaskassistant-object-options
+## Usage
 
-### Configuration
+To run a plugin command in Sketch:
 
-By default, _Run in Sketch_ looks for Sketch in the `/Applications` folder. If you have it installed in a different location, you can specify the path in the extension preferences by opening **Extensions → Extension Library... → Run in Sketch → Preferences**:
+1. Open your `.sketchplugin` project in Nova
+1. In the Tasks toolbar, select the command you want to run
+1. Click the **Run** button
+
+> 💡 You can also press `Command-B` or enter the plugin command name in Nova's command palette
+
+## Configuration
+
+By default, **Run in Sketch** looks for Sketch in the `/Applications` folder.
+
+To specify an alternate location, open **Extensions → Extension Library...** then select Run in Sketch's **Preferences** tab:
 
 ![](https://gitlab.com/ashur/nova-sketch/-/raw/main/assets/preferences.png)
